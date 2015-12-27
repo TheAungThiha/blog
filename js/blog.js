@@ -253,7 +253,7 @@ $(function() {
 	$(document).on('click', '.blog-nav-item', function(e) {
 		e.preventDefault();
 		var href = $(e.target).attr('href');
-		blogRouter.navigate(href, { trigger: true });
+		blogRouter.navigate(href, {trigger: true });
 		$(this).addClass('active').siblings().removeClass('active');
 	});
 });
